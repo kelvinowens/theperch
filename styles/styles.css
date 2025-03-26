@@ -1,0 +1,126 @@
+/* styles.css */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #2C3E4C; /* Deep slate blue, reminiscent of stone */
+    color: #E0E6E9; /* Light, slightly bluish-white */
+    font-family: 'Minecraft', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.site-header {
+    background-color: #1A2633; /* Darker than body for contrast */
+    color: #A0D468; /* Minecraft grass block green */
+    justify-content: center;
+    padding: 2rem;
+}
+
+.site-header img {
+    max-width: 300px;
+    height: auto;
+    border: 4px solid #4A7023; /* Forest green border */
+    border-radius: 8px;
+}
+
+.site-nav {
+    background-color: #34495E; /* Deep blue-gray, like dark prismarine */
+}
+
+.site-nav a {
+    color: #A0D468; /* Grass block green */
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.site-nav a:hover {
+    color: #F2F2F2; /* Almost white for contrast */
+    transform: scale(1.1);
+}
+
+.server-info-card {
+    background-color: #3D5A6C; /* Muted blue-gray, like stone brick */
+    border: 2px solid #4A7023; /* Forest green border */
+    color: #E0E6E9; /* Light text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.server-info-card .bg-green-50 {
+    background-color: #2C3E4C; /* Same as body background for depth */
+    border: 1px solid #4A7023; /* Forest green border */
+    color: #A0D468; /* Grass block green text */
+}
+
+.join-button {
+    background-color: #4A7023; /* Forest green */
+    color: #F2F2F2; /* Almost white */
+    transition: all 0.3s ease;
+}
+
+.join-button:hover {
+    background-color: #5D9B41; /* Brighter green */
+    transform: scale(1.05);
+}
+
+/* Main content area */
+.site-main section {
+    background-color: #34495E; /* Deep blue-gray */
+    color: #E0E6E9; /* Light text */
+}
+
+.site-footer {
+    background-color: #1A2633; /* Darkest background */
+    color: #A0D468; /* Grass block green */
+}
+
+.site-footer a {
+    color: #A0D468;
+    transition: color 0.3s ease;
+}
+
+.site-footer a:hover {
+    color: #F2F2F2; /* Almost white */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .site-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .mobile-menu-toggle span {
+        background-color: #A0D468; /* Grass block green */
+    }
+
+    .site-nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .site-nav a {
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+    }
+
+    .site-nav.active {
+        display: flex;
+    }
+
+    .server-info-card .flex-wrap {
+        flex-direction: column;
+    }
+
+    .server-info-card .w-full {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .join-button {
+        width: 100%;
+        text-align: center;
+    }
+}

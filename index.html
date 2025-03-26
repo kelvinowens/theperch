@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Perch - Minecraft Server</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Site Header -->
+    <header class="site-header flex items-center">
+      <div class="site-header-content">
+        <img
+          src="images/1_High_Resolution_Image.webp"
+          alt="The Perch Logo"
+          class="logo"
+        />
+      </div>
+
+      <!-- Mobile Menu Toggle -->
+      <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="site-nav flex justify-center space-x-6 p-4">
+      <a href="#" class="text-white hover:text-green-300">Home</a>
+      <a
+        href="https://the-perch.notion.site/Rules-17096c327df881869d4deaaba9cfa00d"
+        class="text-white hover:text-green-300"
+        >Rules</a
+      >
+      <a
+        href="https://store.the-perch.net/"
+        class="text-white hover:text-green-300"
+        >Store</a
+      >
+      <a
+        href="https://discord.gg/Qk3HKsqPdD"
+        class="text-white hover:text-green-300"
+        >Discord</a
+      >
+      <a
+        href="https://the-perch.notion.site/Vote-Links-17096c327df88180bdc6eb84b61d27a2"
+        class="text-white hover:text-green-300"
+        >Vote</a
+      >
+    </nav>
+
+    <!-- Main Content Area -->
+    <main
+      class="site-main container mx-auto px-4 py-8 flex flex-col md:flex-row"
+    >
+      <!-- Server Details Sidebar -->
+      <aside class="w-full md:w-1/4 md:pr-8 mb-8 md:mb-0">
+        <section class="server-info-card w-full p-6 rounded-lg">
+          <h2 class="text-2xl font-semibold mb-4 text-center">
+            Server Details
+          </h2>
+
+          <div class="flex flex-wrap justify-between">
+            <div class="w-full p-3 bg-green-50 rounded-lg mb-3">
+              <h3 class="text-lg font-bold mb-2">IP Address</h3>
+              <p class="text-md font-mono">the-perch.net</p>
+            </div>
+
+            <div class="w-full p-3 bg-green-50 rounded-lg mb-3">
+              <h3 class="text-lg font-bold mb-2">Version</h3>
+              <p class="text-md">1.20.1 Vanilla</p>
+            </div>
+          </div>
+
+          <div class="flex justify-center mt-4">
+            <a
+              href="#"
+              class="join-button bg-green-600 text-white px-6 py-3 rounded-full text-lg hover:bg-green-700 transition duration-300"
+            >
+              Join The Perch Now!
+            </a>
+          </div>
+        </section>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="w-full md:w-3/4">
+        <section class="bg-white p-8 rounded-lg shadow-md">
+          <h2 class="text-3xl font-bold mb-4">
+            Looking for a server to call home?
+          </h2>
+          <h3 class="text-2xl font-semibold mb-6">Welcome to The Perch! ❤️</h3>
+
+          <p class="mb-4">
+            The Perch is a server that separates itself from other servers by
+            truly focusing on what the community wants and needs. We work hard
+            to create and maintain a place that players can call a second home,
+            without toxicity or drama.
+          </p>
+
+          <p class="mb-4">
+            We are a semi-vanilla, community-driven server which excels at
+            introducing refreshing and custom features without bloating core
+            gameplay. To ensure that players' hard work is always kept, we will
+            never reset our map.
+          </p>
+
+          <h4 class="text-xl font-semibold mb-4">
+            To give you an idea of our server, here is a short list of
+            <em>key features</em>:
+          </h4>
+
+          <ul class="list-disc pl-5 mb-4">
+            <li>
+              ⌛ A ranking system based on playtime, allowing you to unlock
+              perks simply by playing on the server.
+            </li>
+            <li>
+              🗺️ A web-map where you can view all worlds! (<a
+                href="https://map.the-perch.net"
+                class="text-green-600 hover:underline"
+                >https://map.the-perch.net</a
+              >)
+            </li>
+            <li>
+              💰 An economy that's fair and balanced, with plenty of player-ran
+              shops!
+            </li>
+            <li>
+              🔧 Small tweaks to game-play to make the game just a bit nicer to
+              play.
+            </li>
+            <li>❤️ Last but not least, our lovely community!</li>
+          </ul>
+
+          <h4 class="text-2xl font-bold">See you soon!</h4>
+        </section>
+      </div>
+    </main>
+
+    <!-- Site Footer -->
+    <footer class="site-footer bg-gray-800 text-white p-4 text-center">
+      <p>&copy; 2025 The Perch Minecraft Server. All rights reserved.</p>
+      <div class="flex justify-center space-x-4 mt-2">
+        <a href="#" class="hover:text-green-300">Privacy Policy</a>
+        <a href="#" class="hover:text-green-300">Terms of Service</a>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile Menu Toggle
+      document
+        .querySelector(".mobile-menu-toggle")
+        .addEventListener("click", function () {
+          document.querySelector(".site-nav").classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>
